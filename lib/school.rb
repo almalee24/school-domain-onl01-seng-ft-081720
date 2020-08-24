@@ -19,9 +19,10 @@ class School
   end
   
   def sort 
-    @roster.each do |grade, names|
-     "#{grade} => #{names.sort}"
+    @roster.map do |grade|
+     @roster[grade].sort 
     end
+    @roster
   end
   
 end 
