@@ -19,6 +19,7 @@ class School
   end
   
   def sort 
-    @roster.sort_by{|k, v|  v.partition(" ").first}.to_h
+    
+    @roster.sort_by{|k, v|  v.each{do }}.to_h
   end
 end 
