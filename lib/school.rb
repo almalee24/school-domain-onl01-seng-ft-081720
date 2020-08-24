@@ -15,6 +15,9 @@ class School
   end
   
   def grade(grade)
+    @roster.each do |x|
+      if x == grade 
+        puts values 
     @grade = grade
     puts @roster[grade].values 
   end
