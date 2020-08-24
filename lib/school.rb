@@ -19,8 +19,8 @@ class School
   end
   
   def sort 
-    @roster.map do |grade|
-      puts '
+    @roster.map do |grade, names|
+      puts "#{grade}""
     end
   end
   
