@@ -1,10 +1,12 @@
 class School 
-  def initialize(school_namename)
+  def initialize(school_name)
     @school_name = school_name
     @roster = {}
   end
   
-  def add_student(name, grade)
+  def add_student(student_name, grade)
     if @roster[grade]
-      
+      @roster[grade] << student_name
+    else 
+      @roster[grade] = []
 end 
