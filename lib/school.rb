@@ -1,6 +1,6 @@
 class School 
   attr_reader :name 
-  def new(name) 
+  def initialize(name) 
      @name = name
   end
 end 
