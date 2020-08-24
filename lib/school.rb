@@ -19,6 +19,6 @@ class School
   end
   
   def sort 
-    @roster.sort
+    @roster.map 
   end
 end 
