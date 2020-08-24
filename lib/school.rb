@@ -19,8 +19,6 @@ class School
   end
   
   def sort 
-    @roster.map do |k, v|
-      v.map do |name|
-        name.split(" ")
+    @roster.sort{|k, v| k <=> v.sort{||}}.to_h
   end
 end 
