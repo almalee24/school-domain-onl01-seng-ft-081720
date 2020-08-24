@@ -20,7 +20,7 @@ class School
   
   def sort 
     @roster.map do |grade, names|
-      puts "#{grade}""
+      puts "#{grade} => #{names.sort}"
     end
   end
   
