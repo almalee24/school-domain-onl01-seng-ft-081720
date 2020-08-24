@@ -19,10 +19,7 @@ class School
   end
   
   def sort 
-    @roster.map do |grade|
-     @roster[grade].sort 
-    end
-    @roster
+    @roster.sort_by{|k, v| v}
   end
   
 end 
