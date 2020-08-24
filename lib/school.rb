@@ -16,6 +16,6 @@ class School
   
   def grade(grade)
     @grade = grade
-    @roster[grade].values 
+    puts @roster[grade].values 
   end
 end 
