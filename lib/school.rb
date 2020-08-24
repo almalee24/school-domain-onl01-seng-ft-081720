@@ -19,6 +19,6 @@ class School
   end
   
   def sort 
-    @roster.sort{|k, v| k}.to_h
+    @roster.sort{|k, v| k <=> v.first}.to_h
   end
 end 
