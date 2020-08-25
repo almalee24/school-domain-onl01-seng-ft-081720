@@ -14,7 +14,11 @@ class School
     end
   end
   
+  def grade(grade)
+    @roster[grade]
+  end
+  
   def sort 
-    @roster.sort_by {|k, v| k <=> v.split(' ').first}
+    @roster.sort{|k, v| k <=> v.split(' ').first}.to_h
   end
 end 
