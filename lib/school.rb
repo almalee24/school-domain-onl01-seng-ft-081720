@@ -19,6 +19,7 @@ class School
   end
   
   def sort 
-    @roster.sort{|k, v| k <=> v}.to_h.map
+    @roster.each do |k, v|
+      v.map do |name|
   end
 end 
