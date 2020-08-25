@@ -22,6 +22,6 @@ class School
     @roster.each do |k, v|
       v.sort!
     end
-    @roaster.sort
+    @roster.sort
   end
 end 
