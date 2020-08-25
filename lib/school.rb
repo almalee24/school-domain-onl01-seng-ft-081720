@@ -22,6 +22,6 @@ class School
     @roster.each do |k, v|
       v.sort!
     end
-    @roster.sort.to_h
+    @roster.sort{|k, v| k <=> v.sort!}.to_h
   end
 end 
