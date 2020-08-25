@@ -20,9 +20,7 @@ class School
   
   def sort 
     @roster.each do |k, v|
-      v.map do |a, b|
-        a[0] <=> b[0]
-      end
+      v.sort!{
     end
     @roaster.sort
   end
