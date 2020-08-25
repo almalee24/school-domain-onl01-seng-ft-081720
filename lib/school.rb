@@ -19,6 +19,6 @@ class School
   end
   
   def sort 
-    @roster.sort{|k, v| k <=> v.split(' ').first}.to_h
+    @roster.sort{|k, v| k <=> v}.to_h
   end
 end 
